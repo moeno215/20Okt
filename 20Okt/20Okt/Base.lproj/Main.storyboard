@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mT6-8E-wde">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Bodoni72.ttc">
+            <string>BodoniSvtyTwoITCTT-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Custom Table View Controller-->
+        <scene sceneID="7It-SN-F3U">
+            <objects>
+                <tableViewController id="mT6-8E-wde" customClass="customTableViewController" customModule="_0Okt" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="A5A-xE-4eD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellMakan" rowHeight="87" id="zeK-mM-rI4" customClass="contentTableViewCell" customModule="_0Okt">
+                                <rect key="frame" x="0.0" y="28" width="375" height="87"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zeK-mM-rI4" id="ftN-0P-FcG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qdF-4Y-pzn">
+                                            <rect key="frame" x="15" y="0.0" width="352" height="79"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Margherita Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJL-qV-jbu">
+                                            <rect key="frame" x="21" y="10" width="346" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="fGD-Tm-RbV"/>
+                                                <constraint firstAttribute="width" constant="346" id="psW-9Z-51I"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="28"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$7.95" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkg-FQ-Edd">
+                                            <rect key="frame" x="304" y="54" width="43" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="43" id="Afd-W8-Eei"/>
+                                                <constraint firstAttribute="height" constant="21" id="Vtv-hR-Mdc"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Normal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAF-FQ-tgx">
+                                            <rect key="frame" x="297" y="25" width="56" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="URI-eg-nwL"/>
+                                                <constraint firstAttribute="width" constant="56" id="bIb-wA-STv"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="xAF-FQ-tgx" firstAttribute="top" secondItem="ftN-0P-FcG" secondAttribute="topMargin" constant="17" id="0Uo-ii-cLz"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="CJL-qV-jbu" secondAttribute="bottom" constant="20.5" id="8f7-W0-7WR"/>
+                                        <constraint firstItem="CJL-qV-jbu" firstAttribute="trailing" secondItem="ftN-0P-FcG" secondAttribute="trailingMargin" id="8oM-1d-OEV"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="gkg-FQ-Edd" secondAttribute="trailing" constant="20" id="BLq-Gx-ECH"/>
+                                        <constraint firstItem="gkg-FQ-Edd" firstAttribute="top" secondItem="xAF-FQ-tgx" secondAttribute="bottom" constant="8" id="FrW-D8-v1j"/>
+                                        <constraint firstItem="CJL-qV-jbu" firstAttribute="leading" secondItem="ftN-0P-FcG" secondAttribute="leadingMargin" constant="13" id="GnD-jL-nfW"/>
+                                        <constraint firstItem="CJL-qV-jbu" firstAttribute="top" secondItem="ftN-0P-FcG" secondAttribute="topMargin" constant="2" id="Mif-qD-avW"/>
+                                        <constraint firstItem="gkg-FQ-Edd" firstAttribute="top" secondItem="xAF-FQ-tgx" secondAttribute="bottom" constant="8" id="Obq-o8-fqJ"/>
+                                        <constraint firstItem="xAF-FQ-tgx" firstAttribute="leading" secondItem="ftN-0P-FcG" secondAttribute="leadingMargin" constant="289" id="dG7-uS-JFY"/>
+                                        <constraint firstItem="gkg-FQ-Edd" firstAttribute="leading" secondItem="ftN-0P-FcG" secondAttribute="leadingMargin" constant="296" id="fP4-Xp-6xv"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="gkg-FQ-Edd" secondAttribute="bottom" constant="3.5" id="kRP-Tm-4AI"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="xAF-FQ-tgx" secondAttribute="trailing" constant="14" id="xif-bF-RwW"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="labharga" destination="gkg-FQ-Edd" id="4mT-kl-aLB"/>
+                                    <outlet property="labnama" destination="CJL-qV-jbu" id="zUc-ec-02c"/>
+                                    <outlet property="labpromo" destination="xAF-FQ-tgx" id="eW7-ez-d68"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mT6-8E-wde" id="BkD-Af-PUk"/>
+                            <outlet property="delegate" destination="mT6-8E-wde" id="7MP-fK-FT9"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="123-9L-6dn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151.19999999999999" y="52.623688155922046"/>
+        </scene>
+    </scenes>
+</document>
